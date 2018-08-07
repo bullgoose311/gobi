@@ -7,7 +7,7 @@ var request = require('request');
 var app = express();
 app.use(bodyParser.json());
 
-var kProcessPath = 'c:\\development\\gobi\\go\\src\\gobi\\gobi.exe'; //process.env.GAME_SERVER_PROCESS_PATH;
+var kProcessPath = process.env.GAME_SERVER_PROCESS_PATH;
 var kMaxProcessCount = 3; //process.env.MAX_PROCESS_COUNT;
 var kListenPort = process.env.LSPM_LISTEN_PORT;
 var kVMId = process.env.VM_ID;
